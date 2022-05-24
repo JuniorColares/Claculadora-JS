@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Básica</title>
+    <link rel="stylesheet" href="./calculadora.css">
+</head>
+<body>
+    <div class="resultado">
+        <label for="result" class="titulo">Calculadora:</label>
+        <input type="text" id="result" placeholder="RESULTADO">
+    </div>
+
+    <div>
+        <div>
+            <button class="botao" id="7" onclick="atribuirValor(7)">7</button>
+            <button class="botao" id="8" onclick="atribuirValor(8)">8</button>
+            <button class="botao" id="9" onclick="atribuirValor(9)">9</button>
+            <button class="botao" id="/" onclick="atribuirOperacao('/')">/</button>
+        </div>
+        <div>
+            <button class="botao" id="4" onclick="atribuirValor(4)">4</button>
+            <button class="botao" id="5" onclick="atribuirValor(5)">5</button>
+            <button class="botao" id="6" onclick="atribuirValor(6)">6</button>
+            <button class="botao" id="*" onclick="atribuirOperacao('*')">*</button>
+        </div>
+        <div>
+            <button class="botao" id="1" onclick="atribuirValor(1)">1</button>
+            <button class="botao" id="2" onclick="atribuirValor(2)">2</button>
+            <button class="botao" id="3" onclick="atribuirValor(3)">3</button>
+            <button class="botao" id="-" onclick="atribuirOperacao('-')">-</button>
+        </div>
+        <div>
+            <button class="botao" id="0" onclick="atribuirValor(0)">0</button>
+            <button class="botao" id=".">.</button>
+            <button class="botao" id="=" onclick="resultadoFinal()">=</button>
+            <button class="botao" id="+" onclick="atribuirOperacao('+')">+</button>
+        </div>
+    </div>
+</body>
+<script src="./calculadora.js"></script>
+</html>
